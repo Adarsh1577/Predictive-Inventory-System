@@ -83,11 +83,8 @@ def evaluate_7day_safety(current_stock, reorder_level, daily_forecast, start_dat
     )
 
     covers_7day_margin = current_stock >= safety_buffer_required
-    procurement_alert = (
-        not covers_7day_margin
-        or depletion_day is not None
-        or current_stock <= reorder_level
-    )
+    low_stock = current_stock <= reorder_level
+    procurement_alert = not covers_7day_margin or depletion_day is not None
 
     if depletion_day is not None:
         depletion_date = start_date + datetime.timedelta(days=depletion_day - 1)
@@ -97,13 +94,19 @@ def evaluate_7day_safety(current_stock, reorder_level, daily_forecast, start_dat
         depletion_date_str = None
         depletion_in_days = None
 
-    recommended_order_quantity = critical_shortfall if procurement_alert else 0
+    if procurement_alert:
+        recommended_order_quantity = critical_shortfall
+    elif low_stock:
+        recommended_order_quantity = max(0, int(reorder_level - current_stock))
+    else:
+        recommended_order_quantity = 0
 
     return {
         "predicted_7_day_total": predicted_7_day_total,
         "safety_buffer_required": safety_buffer_required,
         "critical_shortfall": critical_shortfall,
         "covers_7day_margin": covers_7day_margin,
+        "low_stock": low_stock,
         "depletion_date": depletion_date_str,
         "depletion_in_days": depletion_in_days,
         "procurement_alert": procurement_alert,
@@ -112,11 +115,11 @@ def evaluate_7day_safety(current_stock, reorder_level, daily_forecast, start_dat
 
 
 def resolve_status(current_stock, reorder_level, safety_eval):
-    if not safety_eval["covers_7day_margin"] or safety_eval["procurement_alert"]:
+    if safety_eval["procurement_alert"]:
         if safety_eval["depletion_in_days"] is not None and safety_eval["depletion_in_days"] <= 3:
             return "🚨 CRITICAL — 7-DAY MARGIN"
         return "🚨 PROCUREMENT ALERT"
-    if current_stock <= reorder_level:
+    if safety_eval.get("low_stock") or current_stock <= reorder_level:
         return "⚠️ LOW STOCK"
     return "✅ HEALTHY"
 
@@ -215,11 +218,12 @@ def check_inventory_alerts():
                 "safety_buffer_required": safety_eval["safety_buffer_required"],
                 "critical_shortfall": safety_eval["critical_shortfall"],
                 "covers_7day_margin": safety_eval["covers_7day_margin"],
+                "low_stock": safety_eval["low_stock"],
                 "forecast_next_7_days": daily_forecast,
                 "forecast_dates": forecast_dates,
                 "forecast_day_labels": forecast_day_labels,
                 "status": status,
-                "action_required": safety_eval["procurement_alert"],
+                "action_required": safety_eval["procurement_alert"] or safety_eval["low_stock"],
                 "procurement_alert": safety_eval["procurement_alert"],
                 "recommended_order_quantity": safety_eval["recommended_order_quantity"],
                 "depletion_date": safety_eval["depletion_date"],

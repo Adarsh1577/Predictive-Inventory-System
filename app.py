@@ -23,19 +23,51 @@ FASTAPI_URL = "http://127.0.0.1:8001/api/v1/check-inventory"
 BACKEND_DOCS_URL = "http://127.0.0.1:8001/docs"
 
 
+def _validate_forecast_dates(dates, expected_len, product_name):
+    """Require exactly `expected_len` parseable ISO dates (YYYY-MM-DD)."""
+    if not dates:
+        raise ValueError(
+            f"Missing forecast_dates for {product_name!r}: "
+            f"expected {expected_len} ISO dates, got none."
+        )
+    if len(dates) < expected_len:
+        raise ValueError(
+            f"Incomplete forecast_dates for {product_name!r}: "
+            f"expected {expected_len}, got {len(dates)}."
+        )
+
+    validated = []
+    for i, raw in enumerate(dates[:expected_len]):
+        try:
+            parsed = pd.to_datetime(raw, format="%Y-%m-%d", errors="raise")
+        except (ValueError, TypeError) as exc:
+            raise ValueError(
+                f"Invalid forecast_dates[{i}] for {product_name!r}: "
+                f"{raw!r} is not a valid ISO date (YYYY-MM-DD)."
+            ) from exc
+        validated.append(parsed.strftime("%Y-%m-%d"))
+    return validated
+
+
 def build_trend_dataframe(report_list, forecast_dates, forecast_day_labels):
     """Long-format rows for per-product 7-day trend charts."""
     rows = []
     for item in report_list:
         daily = item.get("forecast_next_7_days") or []
+        if not daily:
+            continue
+
         dates = item.get("forecast_dates") or forecast_dates
         labels = item.get("forecast_day_labels") or forecast_day_labels
+        product_name = item.get("product_name", item.get("product_id", "unknown"))
+        validated_dates = _validate_forecast_dates(dates, len(daily), product_name)
+
         for i, demand in enumerate(daily):
             rows.append(
                 {
                     "product_name": item["product_name"],
                     "product_id": item["product_id"],
-                    "forecast_date": dates[i] if i < len(dates) else labels[i],
+                    "forecast_date": validated_dates[i],
                     "day_label": labels[i] if i < len(labels) else f"Day {i + 1}",
                     "predicted_demand": demand,
                     "day_index": i + 1,
@@ -68,7 +100,11 @@ try:
         st.stop()
 
     df = pd.DataFrame(report_list)
-    trend_df = build_trend_dataframe(report_list, forecast_dates, forecast_day_labels)
+    try:
+        trend_df = build_trend_dataframe(report_list, forecast_dates, forecast_day_labels)
+    except ValueError as err:
+        st.error(f"❌ Malformed forecast calendar from API: {err}")
+        st.stop()
 
     total_items = len(df)
     procurement_alerts = int(df["procurement_alert"].sum()) if "procurement_alert" in df.columns else 0
