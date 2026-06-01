@@ -1,4 +1,9 @@
+fastapi
+uvicorn
+streamlit
+requests
 pandas
 numpy
+statsmodels
 sqlalchemy
 mysql-connector-python
