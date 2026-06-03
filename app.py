@@ -8,16 +8,10 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("📦 Smart Alert Inventory Forecasting System")
-st.markdown(
-    "### Multi-Day Autoregressive Demand Forecasting & 7-Day Safety Margin Analytics"
+BACKEND_UNAVAILABLE_MSG = (
+    "⏳ Connecting to Smart Inventory Backend API Server... "
+    "Please ensure the Uvicorn server is running on Port 8001."
 )
-st.caption(
-    "Rolling 7-day forecasts: each day’s prediction feeds the next as a lag feature. "
-    "Procurement alerts use cumulative demand plus reorder-level safety buffers."
-)
-
-st.markdown("---")
 
 FASTAPI_URL = "http://127.0.0.1:8001/api/v1/check-inventory"
 BACKEND_DOCS_URL = "http://127.0.0.1:8001/docs"
@@ -76,18 +70,27 @@ def build_trend_dataframe(report_list, forecast_dates, forecast_day_labels):
     return pd.DataFrame(rows)
 
 
-try:
-    with st.spinner("🔄 Running 7-day autoregressive forecast pipeline..."):
-        response = requests.get(FASTAPI_URL, timeout=30)
+def fetch_inventory_report(url=FASTAPI_URL, timeout=30):
+    """
+    Fetch live inventory JSON from FastAPI.
+    Returns (data_dict, None) on success, or (None, error_message) on failure.
+    """
+    try:
+        response = requests.get(url, timeout=timeout)
+    except requests.exceptions.ConnectionError:
+        return None, "connection"
+    except requests.exceptions.Timeout:
+        return None, "timeout"
+    except requests.RequestException as exc:
+        return None, str(exc)
 
     if response.status_code != 200:
-        st.error(
-            f"❌ FastAPI returned status {response.status_code}. "
-            "Ensure the backend is running on port 8001."
-        )
-        st.stop()
+        return None, f"http_{response.status_code}"
 
-    data = response.json()
+    return response.json(), None
+
+
+def render_dashboard(data):
     report_list = data.get("inventory_report", [])
     forecast_dates = data.get("forecast_dates", [])
     forecast_day_labels = data.get("forecast_day_labels", [])
@@ -97,14 +100,14 @@ try:
 
     if not report_list:
         st.warning("No inventory records returned from the API.")
-        st.stop()
+        return
 
     df = pd.DataFrame(report_list)
     try:
         trend_df = build_trend_dataframe(report_list, forecast_dates, forecast_day_labels)
     except ValueError as err:
         st.error(f"❌ Malformed forecast calendar from API: {err}")
-        st.stop()
+        return
 
     total_items = len(df)
     procurement_alerts = int(df["procurement_alert"].sum()) if "procurement_alert" in df.columns else 0
@@ -164,7 +167,7 @@ try:
         "status",
     ]
     display_df = df[[c for c in display_columns if c in df.columns]]
-    st.dataframe(display_df, use_container_width=True, hide_index=True)
+    st.dataframe(display_df, width="stretch", hide_index=True)
 
     urgent_df = df[df["action_required"] == True].sort_values(  # noqa: E712
         by="depletion_in_days", na_position="last"
@@ -186,7 +189,7 @@ try:
                     "status",
                 ]
             ],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
@@ -254,12 +257,36 @@ try:
     )
     st.bar_chart(comparison, height=360)
 
-except requests.exceptions.ConnectionError:
-    st.error(
-        "🔌 Cannot reach the FastAPI backend. Start it with:\n\n"
-        "`py -m uvicorn main:app --host 127.0.0.1 --port 8001`"
+
+# --- Page shell ---
+st.title("📦 Smart Alert Inventory Forecasting System")
+st.markdown(
+    "### Multi-Day Autoregressive Demand Forecasting & 7-Day Safety Margin Analytics"
+)
+st.caption(
+    "Rolling 7-day forecasts: each day’s prediction feeds the next as a lag feature. "
+    "Procurement alerts use cumulative demand plus reorder-level safety buffers."
+)
+st.markdown("---")
+
+with st.spinner("🔄 Running 7-day autoregressive forecast pipeline..."):
+    data, fetch_error = fetch_inventory_report()
+
+if fetch_error == "connection":
+    st.warning(BACKEND_UNAVAILABLE_MSG)
+    st.caption(
+        "Start the API: `py -m uvicorn main:app --host 127.0.0.1 --port 8001`"
     )
-except requests.exceptions.Timeout:
-    st.error("⏱️ Request timed out. The forecasting loop may be slow on first run.")
-except Exception as exc:
-    st.error(f"Unexpected error: {exc}")
+elif fetch_error == "timeout":
+    st.warning(
+        "⏳ The backend is responding slowly. "
+        "The 7-day autoregressive loop may still be warming up — retry in a moment."
+    )
+elif fetch_error is not None:
+    if fetch_error.startswith("http_"):
+        code = fetch_error.replace("http_", "")
+        st.error(f"❌ FastAPI returned status {code}. Check server logs on port 8001.")
+    else:
+        st.error(f"❌ Could not load inventory report: {fetch_error}")
+elif data is not None:
+    render_dashboard(data)

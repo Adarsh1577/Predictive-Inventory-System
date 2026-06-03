@@ -1,341 +1,335 @@
 Date,Product_ID,Product_Name,Quantity_Sold
-2024-06-01,101,Wireless Headphones,31
-2024-06-01,102,Mechanical Keyboard,21
-2024-06-01,103,Ergonomic Gaming Mouse,53
-2024-06-02,101,Wireless Headphones,40
-2024-06-02,102,Mechanical Keyboard,17
-2024-06-02,103,Ergonomic Gaming Mouse,52
-2024-06-03,101,Wireless Headphones,25
-2024-06-03,102,Mechanical Keyboard,9
-2024-06-03,103,Ergonomic Gaming Mouse,34
-2024-06-04,101,Wireless Headphones,23
-2024-06-04,102,Mechanical Keyboard,11
-2024-06-04,103,Ergonomic Gaming Mouse,40
-2024-06-05,101,Wireless Headphones,22
-2024-06-05,102,Mechanical Keyboard,10
-2024-06-05,103,Ergonomic Gaming Mouse,44
-2024-06-06,101,Wireless Headphones,24
-2024-06-06,102,Mechanical Keyboard,15
-2024-06-06,103,Ergonomic Gaming Mouse,35
-2024-06-07,101,Wireless Headphones,23
-2024-06-07,102,Mechanical Keyboard,15
-2024-06-07,103,Ergonomic Gaming Mouse,36
-2024-06-08,101,Wireless Headphones,34
-2024-06-08,102,Mechanical Keyboard,21
-2024-06-08,103,Ergonomic Gaming Mouse,59
-2024-06-09,101,Wireless Headphones,35
-2024-06-09,102,Mechanical Keyboard,16
-2024-06-09,103,Ergonomic Gaming Mouse,65
-2024-06-10,101,Wireless Headphones,21
-2024-06-10,102,Mechanical Keyboard,15
-2024-06-10,103,Ergonomic Gaming Mouse,34
-2024-06-11,101,Wireless Headphones,21
-2024-06-11,102,Mechanical Keyboard,15
-2024-06-11,103,Ergonomic Gaming Mouse,42
-2024-06-12,101,Wireless Headphones,25
-2024-06-12,102,Mechanical Keyboard,14
-2024-06-12,103,Ergonomic Gaming Mouse,39
-2024-06-13,101,Wireless Headphones,20
-2024-06-13,102,Mechanical Keyboard,12
-2024-06-13,103,Ergonomic Gaming Mouse,38
-2024-06-14,101,Wireless Headphones,28
-2024-06-14,102,Mechanical Keyboard,16
-2024-06-14,103,Ergonomic Gaming Mouse,34
-2024-06-15,101,Wireless Headphones,35
-2024-06-15,102,Mechanical Keyboard,25
-2024-06-15,103,Ergonomic Gaming Mouse,60
-2024-06-16,101,Wireless Headphones,31
-2024-06-16,102,Mechanical Keyboard,18
-2024-06-16,103,Ergonomic Gaming Mouse,56
-2024-06-17,101,Wireless Headphones,21
-2024-06-17,102,Mechanical Keyboard,11
-2024-06-17,103,Ergonomic Gaming Mouse,42
-2024-06-18,101,Wireless Headphones,29
-2024-06-18,102,Mechanical Keyboard,14
-2024-06-18,103,Ergonomic Gaming Mouse,43
-2024-06-19,101,Wireless Headphones,26
-2024-06-19,102,Mechanical Keyboard,13
-2024-06-19,103,Ergonomic Gaming Mouse,41
+2024-06-03,101,Wireless Headphones,26
+2024-06-03,102,Mechanical Keyboard,14
+2024-06-03,103,Ergonomic Gaming Mouse,41
+2024-06-04,101,Wireless Headphones,29
+2024-06-04,102,Mechanical Keyboard,14
+2024-06-04,103,Ergonomic Gaming Mouse,39
+2024-06-05,101,Wireless Headphones,29
+2024-06-05,102,Mechanical Keyboard,17
+2024-06-05,103,Ergonomic Gaming Mouse,38
+2024-06-06,101,Wireless Headphones,26
+2024-06-06,102,Mechanical Keyboard,13
+2024-06-06,103,Ergonomic Gaming Mouse,38
+2024-06-07,101,Wireless Headphones,25
+2024-06-07,102,Mechanical Keyboard,9
+2024-06-07,103,Ergonomic Gaming Mouse,34
+2024-06-08,101,Wireless Headphones,35
+2024-06-08,102,Mechanical Keyboard,17
+2024-06-08,103,Ergonomic Gaming Mouse,53
+2024-06-09,101,Wireless Headphones,38
+2024-06-09,102,Mechanical Keyboard,17
+2024-06-09,103,Ergonomic Gaming Mouse,49
+2024-06-10,101,Wireless Headphones,26
+2024-06-10,102,Mechanical Keyboard,13
+2024-06-10,103,Ergonomic Gaming Mouse,39
+2024-06-11,101,Wireless Headphones,23
+2024-06-11,102,Mechanical Keyboard,20
+2024-06-11,103,Ergonomic Gaming Mouse,39
+2024-06-12,101,Wireless Headphones,21
+2024-06-12,102,Mechanical Keyboard,17
+2024-06-12,103,Ergonomic Gaming Mouse,36
+2024-06-13,101,Wireless Headphones,25
+2024-06-13,102,Mechanical Keyboard,9
+2024-06-13,103,Ergonomic Gaming Mouse,36
+2024-06-14,101,Wireless Headphones,25
+2024-06-14,102,Mechanical Keyboard,17
+2024-06-14,103,Ergonomic Gaming Mouse,40
+2024-06-15,101,Wireless Headphones,30
+2024-06-15,102,Mechanical Keyboard,15
+2024-06-15,103,Ergonomic Gaming Mouse,57
+2024-06-16,101,Wireless Headphones,33
+2024-06-16,102,Mechanical Keyboard,21
+2024-06-16,103,Ergonomic Gaming Mouse,63
+2024-06-17,101,Wireless Headphones,22
+2024-06-17,102,Mechanical Keyboard,14
+2024-06-17,103,Ergonomic Gaming Mouse,40
+2024-06-18,101,Wireless Headphones,27
+2024-06-18,102,Mechanical Keyboard,13
+2024-06-18,103,Ergonomic Gaming Mouse,39
+2024-06-19,101,Wireless Headphones,21
+2024-06-19,102,Mechanical Keyboard,11
+2024-06-19,103,Ergonomic Gaming Mouse,42
 2024-06-20,101,Wireless Headphones,29
 2024-06-20,102,Mechanical Keyboard,14
-2024-06-20,103,Ergonomic Gaming Mouse,44
-2024-06-21,101,Wireless Headphones,17
-2024-06-21,102,Mechanical Keyboard,17
-2024-06-21,103,Ergonomic Gaming Mouse,40
-2024-06-22,101,Wireless Headphones,33
-2024-06-22,102,Mechanical Keyboard,21
-2024-06-22,103,Ergonomic Gaming Mouse,57
-2024-06-23,101,Wireless Headphones,35
-2024-06-23,102,Mechanical Keyboard,22
-2024-06-23,103,Ergonomic Gaming Mouse,64
-2024-06-24,101,Wireless Headphones,25
-2024-06-24,102,Mechanical Keyboard,13
-2024-06-24,103,Ergonomic Gaming Mouse,41
-2024-06-25,101,Wireless Headphones,25
-2024-06-25,102,Mechanical Keyboard,17
-2024-06-25,103,Ergonomic Gaming Mouse,37
-2024-06-26,101,Wireless Headphones,24
+2024-06-20,103,Ergonomic Gaming Mouse,43
+2024-06-21,101,Wireless Headphones,26
+2024-06-21,102,Mechanical Keyboard,13
+2024-06-21,103,Ergonomic Gaming Mouse,41
+2024-06-22,101,Wireless Headphones,42
+2024-06-22,102,Mechanical Keyboard,13
+2024-06-22,103,Ergonomic Gaming Mouse,54
+2024-06-23,101,Wireless Headphones,33
+2024-06-23,102,Mechanical Keyboard,20
+2024-06-23,103,Ergonomic Gaming Mouse,57
+2024-06-24,101,Wireless Headphones,26
+2024-06-24,102,Mechanical Keyboard,19
+2024-06-24,103,Ergonomic Gaming Mouse,38
+2024-06-25,101,Wireless Headphones,22
+2024-06-25,102,Mechanical Keyboard,13
+2024-06-25,103,Ergonomic Gaming Mouse,42
+2024-06-26,101,Wireless Headphones,25
 2024-06-26,102,Mechanical Keyboard,13
-2024-06-26,103,Ergonomic Gaming Mouse,35
+2024-06-26,103,Ergonomic Gaming Mouse,41
 2024-06-27,101,Wireless Headphones,25
-2024-06-27,102,Mechanical Keyboard,15
-2024-06-27,103,Ergonomic Gaming Mouse,40
+2024-06-27,102,Mechanical Keyboard,17
+2024-06-27,103,Ergonomic Gaming Mouse,37
 2024-06-28,101,Wireless Headphones,24
-2024-06-28,102,Mechanical Keyboard,10
-2024-06-28,103,Ergonomic Gaming Mouse,38
-2024-06-29,101,Wireless Headphones,34
-2024-06-29,102,Mechanical Keyboard,20
-2024-06-29,103,Ergonomic Gaming Mouse,55
-2024-06-30,101,Wireless Headphones,44
-2024-06-30,102,Mechanical Keyboard,23
-2024-06-30,103,Ergonomic Gaming Mouse,50
-2024-07-01,101,Wireless Headphones,25
-2024-07-01,102,Mechanical Keyboard,22
-2024-07-01,103,Ergonomic Gaming Mouse,39
-2024-07-02,101,Wireless Headphones,25
+2024-06-28,102,Mechanical Keyboard,13
+2024-06-28,103,Ergonomic Gaming Mouse,35
+2024-06-29,101,Wireless Headphones,30
+2024-06-29,102,Mechanical Keyboard,21
+2024-06-29,103,Ergonomic Gaming Mouse,54
+2024-06-30,101,Wireless Headphones,34
+2024-06-30,102,Mechanical Keyboard,19
+2024-06-30,103,Ergonomic Gaming Mouse,67
+2024-07-01,101,Wireless Headphones,19
+2024-07-01,102,Mechanical Keyboard,14
+2024-07-01,103,Ergonomic Gaming Mouse,40
+2024-07-02,101,Wireless Headphones,32
 2024-07-02,102,Mechanical Keyboard,14
-2024-07-02,103,Ergonomic Gaming Mouse,36
-2024-07-03,101,Wireless Headphones,28
-2024-07-03,102,Mechanical Keyboard,17
-2024-07-03,103,Ergonomic Gaming Mouse,42
-2024-07-04,101,Wireless Headphones,22
-2024-07-04,102,Mechanical Keyboard,19
-2024-07-04,103,Ergonomic Gaming Mouse,35
-2024-07-05,101,Wireless Headphones,26
-2024-07-05,102,Mechanical Keyboard,21
-2024-07-05,103,Ergonomic Gaming Mouse,37
-2024-07-06,101,Wireless Headphones,31
-2024-07-06,102,Mechanical Keyboard,17
-2024-07-06,103,Ergonomic Gaming Mouse,59
-2024-07-07,101,Wireless Headphones,31
-2024-07-07,102,Mechanical Keyboard,28
+2024-07-02,103,Ergonomic Gaming Mouse,40
+2024-07-03,101,Wireless Headphones,24
+2024-07-03,102,Mechanical Keyboard,11
+2024-07-03,103,Ergonomic Gaming Mouse,43
+2024-07-04,101,Wireless Headphones,27
+2024-07-04,102,Mechanical Keyboard,17
+2024-07-04,103,Ergonomic Gaming Mouse,37
+2024-07-05,101,Wireless Headphones,29
+2024-07-05,102,Mechanical Keyboard,10
+2024-07-05,103,Ergonomic Gaming Mouse,41
+2024-07-06,101,Wireless Headphones,39
+2024-07-06,102,Mechanical Keyboard,20
+2024-07-06,103,Ergonomic Gaming Mouse,50
+2024-07-07,101,Wireless Headphones,32
+2024-07-07,102,Mechanical Keyboard,22
 2024-07-07,103,Ergonomic Gaming Mouse,51
-2024-07-08,101,Wireless Headphones,24
-2024-07-08,102,Mechanical Keyboard,17
-2024-07-08,103,Ergonomic Gaming Mouse,36
-2024-07-09,101,Wireless Headphones,25
-2024-07-09,102,Mechanical Keyboard,18
-2024-07-09,103,Ergonomic Gaming Mouse,35
-2024-07-10,101,Wireless Headphones,25
-2024-07-10,102,Mechanical Keyboard,15
-2024-07-10,103,Ergonomic Gaming Mouse,42
-2024-07-11,101,Wireless Headphones,21
-2024-07-11,102,Mechanical Keyboard,11
-2024-07-11,103,Ergonomic Gaming Mouse,41
-2024-07-12,101,Wireless Headphones,25
-2024-07-12,102,Mechanical Keyboard,15
-2024-07-12,103,Ergonomic Gaming Mouse,41
-2024-07-13,101,Wireless Headphones,37
-2024-07-13,102,Mechanical Keyboard,22
-2024-07-13,103,Ergonomic Gaming Mouse,53
-2024-07-14,101,Wireless Headphones,34
-2024-07-14,102,Mechanical Keyboard,24
-2024-07-14,103,Ergonomic Gaming Mouse,51
-2024-07-15,101,Wireless Headphones,28
-2024-07-15,102,Mechanical Keyboard,12
-2024-07-15,103,Ergonomic Gaming Mouse,42
-2024-07-16,101,Wireless Headphones,26
-2024-07-16,102,Mechanical Keyboard,17
-2024-07-16,103,Ergonomic Gaming Mouse,45
-2024-07-17,101,Wireless Headphones,24
-2024-07-17,102,Mechanical Keyboard,12
-2024-07-17,103,Ergonomic Gaming Mouse,37
-2024-07-18,101,Wireless Headphones,22
+2024-07-08,101,Wireless Headphones,29
+2024-07-08,102,Mechanical Keyboard,12
+2024-07-08,103,Ergonomic Gaming Mouse,39
+2024-07-09,101,Wireless Headphones,27
+2024-07-09,102,Mechanical Keyboard,11
+2024-07-09,103,Ergonomic Gaming Mouse,40
+2024-07-10,101,Wireless Headphones,28
+2024-07-10,102,Mechanical Keyboard,10
+2024-07-10,103,Ergonomic Gaming Mouse,40
+2024-07-11,101,Wireless Headphones,25
+2024-07-11,102,Mechanical Keyboard,17
+2024-07-11,103,Ergonomic Gaming Mouse,36
+2024-07-12,101,Wireless Headphones,21
+2024-07-12,102,Mechanical Keyboard,16
+2024-07-12,103,Ergonomic Gaming Mouse,40
+2024-07-13,101,Wireless Headphones,41
+2024-07-13,102,Mechanical Keyboard,23
+2024-07-13,103,Ergonomic Gaming Mouse,54
+2024-07-14,101,Wireless Headphones,35
+2024-07-14,102,Mechanical Keyboard,20
+2024-07-14,103,Ergonomic Gaming Mouse,56
+2024-07-15,101,Wireless Headphones,21
+2024-07-15,102,Mechanical Keyboard,16
+2024-07-15,103,Ergonomic Gaming Mouse,37
+2024-07-16,101,Wireless Headphones,27
+2024-07-16,102,Mechanical Keyboard,18
+2024-07-16,103,Ergonomic Gaming Mouse,37
+2024-07-17,101,Wireless Headphones,27
+2024-07-17,102,Mechanical Keyboard,16
+2024-07-17,103,Ergonomic Gaming Mouse,42
+2024-07-18,101,Wireless Headphones,30
 2024-07-18,102,Mechanical Keyboard,14
-2024-07-18,103,Ergonomic Gaming Mouse,41
-2024-07-19,101,Wireless Headphones,25
-2024-07-19,102,Mechanical Keyboard,17
-2024-07-19,103,Ergonomic Gaming Mouse,40
-2024-07-20,101,Wireless Headphones,41
-2024-07-20,102,Mechanical Keyboard,23
-2024-07-20,103,Ergonomic Gaming Mouse,52
-2024-07-21,101,Wireless Headphones,29
-2024-07-21,102,Mechanical Keyboard,25
-2024-07-21,103,Ergonomic Gaming Mouse,62
-2024-07-22,101,Wireless Headphones,27
-2024-07-22,102,Mechanical Keyboard,16
-2024-07-22,103,Ergonomic Gaming Mouse,39
-2024-07-23,101,Wireless Headphones,22
-2024-07-23,102,Mechanical Keyboard,10
-2024-07-23,103,Ergonomic Gaming Mouse,38
-2024-07-24,101,Wireless Headphones,27
-2024-07-24,102,Mechanical Keyboard,15
-2024-07-24,103,Ergonomic Gaming Mouse,36
+2024-07-18,103,Ergonomic Gaming Mouse,37
+2024-07-19,101,Wireless Headphones,22
+2024-07-19,102,Mechanical Keyboard,12
+2024-07-19,103,Ergonomic Gaming Mouse,39
+2024-07-20,101,Wireless Headphones,40
+2024-07-20,102,Mechanical Keyboard,22
+2024-07-20,103,Ergonomic Gaming Mouse,63
+2024-07-21,101,Wireless Headphones,38
+2024-07-21,102,Mechanical Keyboard,18
+2024-07-21,103,Ergonomic Gaming Mouse,49
+2024-07-22,101,Wireless Headphones,26
+2024-07-22,102,Mechanical Keyboard,14
+2024-07-22,103,Ergonomic Gaming Mouse,42
+2024-07-23,101,Wireless Headphones,26
+2024-07-23,102,Mechanical Keyboard,14
+2024-07-23,103,Ergonomic Gaming Mouse,37
+2024-07-24,101,Wireless Headphones,20
+2024-07-24,102,Mechanical Keyboard,13
+2024-07-24,103,Ergonomic Gaming Mouse,42
 2024-07-25,101,Wireless Headphones,25
-2024-07-25,102,Mechanical Keyboard,16
-2024-07-25,103,Ergonomic Gaming Mouse,37
-2024-07-26,101,Wireless Headphones,25
-2024-07-26,102,Mechanical Keyboard,15
-2024-07-26,103,Ergonomic Gaming Mouse,36
-2024-07-27,101,Wireless Headphones,41
-2024-07-27,102,Mechanical Keyboard,25
-2024-07-27,103,Ergonomic Gaming Mouse,59
-2024-07-28,101,Wireless Headphones,36
-2024-07-28,102,Mechanical Keyboard,23
-2024-07-28,103,Ergonomic Gaming Mouse,60
+2024-07-25,102,Mechanical Keyboard,11
+2024-07-25,103,Ergonomic Gaming Mouse,40
+2024-07-26,101,Wireless Headphones,26
+2024-07-26,102,Mechanical Keyboard,12
+2024-07-26,103,Ergonomic Gaming Mouse,40
+2024-07-27,101,Wireless Headphones,40
+2024-07-27,102,Mechanical Keyboard,22
+2024-07-27,103,Ergonomic Gaming Mouse,57
+2024-07-28,101,Wireless Headphones,38
+2024-07-28,102,Mechanical Keyboard,24
+2024-07-28,103,Ergonomic Gaming Mouse,63
 2024-07-29,101,Wireless Headphones,26
-2024-07-29,102,Mechanical Keyboard,18
-2024-07-29,103,Ergonomic Gaming Mouse,42
-2024-07-30,101,Wireless Headphones,26
-2024-07-30,102,Mechanical Keyboard,14
-2024-07-30,103,Ergonomic Gaming Mouse,42
-2024-07-31,101,Wireless Headphones,22
-2024-07-31,102,Mechanical Keyboard,14
-2024-07-31,103,Ergonomic Gaming Mouse,38
-2024-08-01,101,Wireless Headphones,25
-2024-08-01,102,Mechanical Keyboard,21
-2024-08-01,103,Ergonomic Gaming Mouse,34
-2024-08-02,101,Wireless Headphones,27
-2024-08-02,102,Mechanical Keyboard,10
-2024-08-02,103,Ergonomic Gaming Mouse,38
-2024-08-03,101,Wireless Headphones,36
-2024-08-03,102,Mechanical Keyboard,19
-2024-08-03,103,Ergonomic Gaming Mouse,61
-2024-08-04,101,Wireless Headphones,33
-2024-08-04,102,Mechanical Keyboard,19
+2024-07-29,102,Mechanical Keyboard,26
+2024-07-29,103,Ergonomic Gaming Mouse,41
+2024-07-30,101,Wireless Headphones,28
+2024-07-30,102,Mechanical Keyboard,17
+2024-07-30,103,Ergonomic Gaming Mouse,41
+2024-07-31,101,Wireless Headphones,24
+2024-07-31,102,Mechanical Keyboard,17
+2024-07-31,103,Ergonomic Gaming Mouse,37
+2024-08-01,101,Wireless Headphones,24
+2024-08-01,102,Mechanical Keyboard,13
+2024-08-01,103,Ergonomic Gaming Mouse,40
+2024-08-02,101,Wireless Headphones,31
+2024-08-02,102,Mechanical Keyboard,9
+2024-08-02,103,Ergonomic Gaming Mouse,42
+2024-08-03,101,Wireless Headphones,27
+2024-08-03,102,Mechanical Keyboard,18
+2024-08-03,103,Ergonomic Gaming Mouse,56
+2024-08-04,101,Wireless Headphones,34
+2024-08-04,102,Mechanical Keyboard,24
 2024-08-04,103,Ergonomic Gaming Mouse,53
-2024-08-05,101,Wireless Headphones,25
-2024-08-05,102,Mechanical Keyboard,13
-2024-08-05,103,Ergonomic Gaming Mouse,42
-2024-08-06,101,Wireless Headphones,22
-2024-08-06,102,Mechanical Keyboard,14
-2024-08-06,103,Ergonomic Gaming Mouse,41
+2024-08-05,101,Wireless Headphones,23
+2024-08-05,102,Mechanical Keyboard,21
+2024-08-05,103,Ergonomic Gaming Mouse,41
+2024-08-06,101,Wireless Headphones,18
+2024-08-06,102,Mechanical Keyboard,15
+2024-08-06,103,Ergonomic Gaming Mouse,38
 2024-08-07,101,Wireless Headphones,27
-2024-08-07,102,Mechanical Keyboard,11
-2024-08-07,103,Ergonomic Gaming Mouse,38
-2024-08-08,101,Wireless Headphones,23
-2024-08-08,102,Mechanical Keyboard,13
-2024-08-08,103,Ergonomic Gaming Mouse,45
-2024-08-09,101,Wireless Headphones,26
-2024-08-09,102,Mechanical Keyboard,11
-2024-08-09,103,Ergonomic Gaming Mouse,42
-2024-08-10,101,Wireless Headphones,40
-2024-08-10,102,Mechanical Keyboard,27
-2024-08-10,103,Ergonomic Gaming Mouse,54
-2024-08-11,101,Wireless Headphones,34
-2024-08-11,102,Mechanical Keyboard,18
-2024-08-11,103,Ergonomic Gaming Mouse,58
-2024-08-12,101,Wireless Headphones,15
-2024-08-12,102,Mechanical Keyboard,11
-2024-08-12,103,Ergonomic Gaming Mouse,39
-2024-08-13,101,Wireless Headphones,21
-2024-08-13,102,Mechanical Keyboard,19
-2024-08-13,103,Ergonomic Gaming Mouse,35
-2024-08-14,101,Wireless Headphones,23
-2024-08-14,102,Mechanical Keyboard,15
+2024-08-07,102,Mechanical Keyboard,12
+2024-08-07,103,Ergonomic Gaming Mouse,39
+2024-08-08,101,Wireless Headphones,26
+2024-08-08,102,Mechanical Keyboard,17
+2024-08-08,103,Ergonomic Gaming Mouse,36
+2024-08-09,101,Wireless Headphones,23
+2024-08-09,102,Mechanical Keyboard,13
+2024-08-09,103,Ergonomic Gaming Mouse,38
+2024-08-10,101,Wireless Headphones,39
+2024-08-10,102,Mechanical Keyboard,24
+2024-08-10,103,Ergonomic Gaming Mouse,64
+2024-08-11,101,Wireless Headphones,42
+2024-08-11,102,Mechanical Keyboard,19
+2024-08-11,103,Ergonomic Gaming Mouse,57
+2024-08-12,101,Wireless Headphones,26
+2024-08-12,102,Mechanical Keyboard,17
+2024-08-12,103,Ergonomic Gaming Mouse,37
+2024-08-13,101,Wireless Headphones,24
+2024-08-13,102,Mechanical Keyboard,5
+2024-08-13,103,Ergonomic Gaming Mouse,36
+2024-08-14,101,Wireless Headphones,24
+2024-08-14,102,Mechanical Keyboard,11
 2024-08-14,103,Ergonomic Gaming Mouse,44
 2024-08-15,101,Wireless Headphones,20
-2024-08-15,102,Mechanical Keyboard,18
+2024-08-15,102,Mechanical Keyboard,13
 2024-08-15,103,Ergonomic Gaming Mouse,40
-2024-08-16,101,Wireless Headphones,22
-2024-08-16,102,Mechanical Keyboard,16
-2024-08-16,103,Ergonomic Gaming Mouse,40
-2024-08-17,101,Wireless Headphones,30
-2024-08-17,102,Mechanical Keyboard,22
-2024-08-17,103,Ergonomic Gaming Mouse,58
-2024-08-18,101,Wireless Headphones,43
-2024-08-18,102,Mechanical Keyboard,17
-2024-08-18,103,Ergonomic Gaming Mouse,57
-2024-08-19,101,Wireless Headphones,23
+2024-08-16,101,Wireless Headphones,29
+2024-08-16,102,Mechanical Keyboard,10
+2024-08-16,103,Ergonomic Gaming Mouse,43
+2024-08-17,101,Wireless Headphones,37
+2024-08-17,102,Mechanical Keyboard,20
+2024-08-17,103,Ergonomic Gaming Mouse,50
+2024-08-18,101,Wireless Headphones,37
+2024-08-18,102,Mechanical Keyboard,23
+2024-08-18,103,Ergonomic Gaming Mouse,66
+2024-08-19,101,Wireless Headphones,19
 2024-08-19,102,Mechanical Keyboard,14
-2024-08-19,103,Ergonomic Gaming Mouse,38
-2024-08-20,101,Wireless Headphones,23
-2024-08-20,102,Mechanical Keyboard,17
-2024-08-20,103,Ergonomic Gaming Mouse,41
-2024-08-21,101,Wireless Headphones,22
-2024-08-21,102,Mechanical Keyboard,17
-2024-08-21,103,Ergonomic Gaming Mouse,40
-2024-08-22,101,Wireless Headphones,27
-2024-08-22,102,Mechanical Keyboard,16
-2024-08-22,103,Ergonomic Gaming Mouse,37
-2024-08-23,101,Wireless Headphones,23
+2024-08-19,103,Ergonomic Gaming Mouse,41
+2024-08-20,101,Wireless Headphones,25
+2024-08-20,102,Mechanical Keyboard,13
+2024-08-20,103,Ergonomic Gaming Mouse,39
+2024-08-21,101,Wireless Headphones,23
+2024-08-21,102,Mechanical Keyboard,13
+2024-08-21,103,Ergonomic Gaming Mouse,42
+2024-08-22,101,Wireless Headphones,26
+2024-08-22,102,Mechanical Keyboard,12
+2024-08-22,103,Ergonomic Gaming Mouse,42
+2024-08-23,101,Wireless Headphones,25
 2024-08-23,102,Mechanical Keyboard,17
 2024-08-23,103,Ergonomic Gaming Mouse,41
-2024-08-24,101,Wireless Headphones,34
-2024-08-24,102,Mechanical Keyboard,19
-2024-08-24,103,Ergonomic Gaming Mouse,60
-2024-08-25,101,Wireless Headphones,36
-2024-08-25,102,Mechanical Keyboard,20
-2024-08-25,103,Ergonomic Gaming Mouse,64
-2024-08-26,101,Wireless Headphones,27
-2024-08-26,102,Mechanical Keyboard,14
-2024-08-26,103,Ergonomic Gaming Mouse,40
+2024-08-24,101,Wireless Headphones,36
+2024-08-24,102,Mechanical Keyboard,21
+2024-08-24,103,Ergonomic Gaming Mouse,58
+2024-08-25,101,Wireless Headphones,34
+2024-08-25,102,Mechanical Keyboard,25
+2024-08-25,103,Ergonomic Gaming Mouse,59
+2024-08-26,101,Wireless Headphones,28
+2024-08-26,102,Mechanical Keyboard,15
+2024-08-26,103,Ergonomic Gaming Mouse,42
 2024-08-27,101,Wireless Headphones,24
 2024-08-27,102,Mechanical Keyboard,15
-2024-08-27,103,Ergonomic Gaming Mouse,41
-2024-08-28,101,Wireless Headphones,22
-2024-08-28,102,Mechanical Keyboard,21
-2024-08-28,103,Ergonomic Gaming Mouse,36
-2024-08-29,101,Wireless Headphones,21
-2024-08-29,102,Mechanical Keyboard,18
-2024-08-29,103,Ergonomic Gaming Mouse,42
-2024-08-30,101,Wireless Headphones,26
-2024-08-30,102,Mechanical Keyboard,16
-2024-08-30,103,Ergonomic Gaming Mouse,39
-2024-08-31,101,Wireless Headphones,30
-2024-08-31,102,Mechanical Keyboard,24
+2024-08-27,103,Ergonomic Gaming Mouse,39
+2024-08-28,101,Wireless Headphones,25
+2024-08-28,102,Mechanical Keyboard,16
+2024-08-28,103,Ergonomic Gaming Mouse,37
+2024-08-29,101,Wireless Headphones,31
+2024-08-29,102,Mechanical Keyboard,11
+2024-08-29,103,Ergonomic Gaming Mouse,36
+2024-08-30,101,Wireless Headphones,28
+2024-08-30,102,Mechanical Keyboard,17
+2024-08-30,103,Ergonomic Gaming Mouse,41
+2024-08-31,101,Wireless Headphones,35
+2024-08-31,102,Mechanical Keyboard,21
 2024-08-31,103,Ergonomic Gaming Mouse,55
-2024-09-01,101,Wireless Headphones,34
-2024-09-01,102,Mechanical Keyboard,20
-2024-09-01,103,Ergonomic Gaming Mouse,53
-2024-09-02,101,Wireless Headphones,23
-2024-09-02,102,Mechanical Keyboard,13
-2024-09-02,103,Ergonomic Gaming Mouse,40
-2024-09-03,101,Wireless Headphones,20
-2024-09-03,102,Mechanical Keyboard,10
-2024-09-03,103,Ergonomic Gaming Mouse,37
-2024-09-04,101,Wireless Headphones,24
-2024-09-04,102,Mechanical Keyboard,15
-2024-09-04,103,Ergonomic Gaming Mouse,44
-2024-09-05,101,Wireless Headphones,27
-2024-09-05,102,Mechanical Keyboard,14
-2024-09-05,103,Ergonomic Gaming Mouse,39
-2024-09-06,101,Wireless Headphones,21
+2024-09-01,101,Wireless Headphones,36
+2024-09-01,102,Mechanical Keyboard,19
+2024-09-01,103,Ergonomic Gaming Mouse,58
+2024-09-02,101,Wireless Headphones,25
+2024-09-02,102,Mechanical Keyboard,15
+2024-09-02,103,Ergonomic Gaming Mouse,38
+2024-09-03,101,Wireless Headphones,23
+2024-09-03,102,Mechanical Keyboard,15
+2024-09-03,103,Ergonomic Gaming Mouse,35
+2024-09-04,101,Wireless Headphones,20
+2024-09-04,102,Mechanical Keyboard,12
+2024-09-04,103,Ergonomic Gaming Mouse,39
+2024-09-05,101,Wireless Headphones,25
+2024-09-05,102,Mechanical Keyboard,19
+2024-09-05,103,Ergonomic Gaming Mouse,42
+2024-09-06,101,Wireless Headphones,24
 2024-09-06,102,Mechanical Keyboard,14
-2024-09-06,103,Ergonomic Gaming Mouse,39
-2024-09-07,101,Wireless Headphones,36
-2024-09-07,102,Mechanical Keyboard,24
-2024-09-07,103,Ergonomic Gaming Mouse,59
-2024-09-08,101,Wireless Headphones,36
-2024-09-08,102,Mechanical Keyboard,20
-2024-09-08,103,Ergonomic Gaming Mouse,66
+2024-09-06,103,Ergonomic Gaming Mouse,36
+2024-09-07,101,Wireless Headphones,30
+2024-09-07,102,Mechanical Keyboard,19
+2024-09-07,103,Ergonomic Gaming Mouse,57
+2024-09-08,101,Wireless Headphones,39
+2024-09-08,102,Mechanical Keyboard,19
+2024-09-08,103,Ergonomic Gaming Mouse,59
 2024-09-09,101,Wireless Headphones,25
-2024-09-09,102,Mechanical Keyboard,12
+2024-09-09,102,Mechanical Keyboard,15
 2024-09-09,103,Ergonomic Gaming Mouse,40
-2024-09-10,101,Wireless Headphones,26
-2024-09-10,102,Mechanical Keyboard,19
-2024-09-10,103,Ergonomic Gaming Mouse,42
-2024-09-11,101,Wireless Headphones,31
-2024-09-11,102,Mechanical Keyboard,12
-2024-09-11,103,Ergonomic Gaming Mouse,42
-2024-09-12,101,Wireless Headphones,25
-2024-09-12,102,Mechanical Keyboard,21
-2024-09-12,103,Ergonomic Gaming Mouse,37
-2024-09-13,101,Wireless Headphones,22
-2024-09-13,102,Mechanical Keyboard,13
-2024-09-13,103,Ergonomic Gaming Mouse,33
-2024-09-14,101,Wireless Headphones,35
-2024-09-14,102,Mechanical Keyboard,20
-2024-09-14,103,Ergonomic Gaming Mouse,61
-2024-09-15,101,Wireless Headphones,35
-2024-09-15,102,Mechanical Keyboard,25
-2024-09-15,103,Ergonomic Gaming Mouse,57
-2024-09-16,101,Wireless Headphones,30
-2024-09-16,102,Mechanical Keyboard,18
-2024-09-16,103,Ergonomic Gaming Mouse,38
-2024-09-17,101,Wireless Headphones,19
-2024-09-17,102,Mechanical Keyboard,19
-2024-09-17,103,Ergonomic Gaming Mouse,39
-2024-09-18,101,Wireless Headphones,28
-2024-09-18,102,Mechanical Keyboard,10
-2024-09-18,103,Ergonomic Gaming Mouse,38
-2024-09-19,101,Wireless Headphones,25
-2024-09-19,102,Mechanical Keyboard,15
-2024-09-19,103,Ergonomic Gaming Mouse,38
-2024-09-20,101,Wireless Headphones,26
-2024-09-20,102,Mechanical Keyboard,11
-2024-09-20,103,Ergonomic Gaming Mouse,39
-2024-09-21,101,Wireless Headphones,35
+2024-09-10,101,Wireless Headphones,22
+2024-09-10,102,Mechanical Keyboard,15
+2024-09-10,103,Ergonomic Gaming Mouse,41
+2024-09-11,101,Wireless Headphones,29
+2024-09-11,102,Mechanical Keyboard,17
+2024-09-11,103,Ergonomic Gaming Mouse,46
+2024-09-12,101,Wireless Headphones,22
+2024-09-12,102,Mechanical Keyboard,17
+2024-09-12,103,Ergonomic Gaming Mouse,40
+2024-09-13,101,Wireless Headphones,31
+2024-09-13,102,Mechanical Keyboard,12
+2024-09-13,103,Ergonomic Gaming Mouse,37
+2024-09-14,101,Wireless Headphones,34
+2024-09-14,102,Mechanical Keyboard,18
+2024-09-14,103,Ergonomic Gaming Mouse,64
+2024-09-15,101,Wireless Headphones,40
+2024-09-15,102,Mechanical Keyboard,26
+2024-09-15,103,Ergonomic Gaming Mouse,59
+2024-09-16,101,Wireless Headphones,26
+2024-09-16,102,Mechanical Keyboard,11
+2024-09-16,103,Ergonomic Gaming Mouse,45
+2024-09-17,101,Wireless Headphones,28
+2024-09-17,102,Mechanical Keyboard,13
+2024-09-17,103,Ergonomic Gaming Mouse,34
+2024-09-18,101,Wireless Headphones,29
+2024-09-18,102,Mechanical Keyboard,14
+2024-09-18,103,Ergonomic Gaming Mouse,43
+2024-09-19,101,Wireless Headphones,20
+2024-09-19,102,Mechanical Keyboard,13
+2024-09-19,103,Ergonomic Gaming Mouse,40
+2024-09-20,101,Wireless Headphones,25
+2024-09-20,102,Mechanical Keyboard,13
+2024-09-20,103,Ergonomic Gaming Mouse,41
+2024-09-21,101,Wireless Headphones,31
 2024-09-21,102,Mechanical Keyboard,24
 2024-09-21,103,Ergonomic Gaming Mouse,56
 2024-09-22,101,Wireless Headphones,36
@@ -2192,3 +2186,9 @@ Date,Product_ID,Product_Name,Quantity_Sold
 2026-06-01,101,Wireless Headphones,27
 2026-06-01,102,Mechanical Keyboard,14
 2026-06-01,103,Ergonomic Gaming Mouse,43
+2026-06-02,101,Wireless Headphones,21
+2026-06-02,102,Mechanical Keyboard,12
+2026-06-02,103,Ergonomic Gaming Mouse,38
+2026-06-03,101,Wireless Headphones,23
+2026-06-03,102,Mechanical Keyboard,11
+2026-06-03,103,Ergonomic Gaming Mouse,43
