@@ -4,6 +4,7 @@ import pandas as pd
 import datetime
 import pickle
 import numpy as np
+from config import MODEL_FILENAME, mysql_connect
 
 FORECAST_HORIZON = 7
 
@@ -15,8 +16,6 @@ app = FastAPI(
     ),
     version="2.0.0",
 )
-
-MODEL_FILENAME = "inventory_forecast_models.pkl"
 
 
 def load_forecast_models():
@@ -137,12 +136,7 @@ def home():
 @app.get("/api/v1/procurement-alerts")
 def procurement_alerts():
     try:
-        conn = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Aps@JC-857079N",
-            database="inventory_system",
-        )
+        conn = mysql_connect()
         cursor = conn.cursor(dictionary=True)
     except mysql.connector.Error as err:
         raise HTTPException(status_code=500, detail=f"Database Connection Failed: {err}")
@@ -167,12 +161,7 @@ def procurement_alerts():
 @app.get("/api/v1/check-inventory")
 def check_inventory_alerts():
     try:
-        conn = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Aps@JC-857079N",
-            database="inventory_system",
-        )
+        conn = mysql_connect()
         cursor = conn.cursor(dictionary=True)
     except mysql.connector.Error as err:
         raise HTTPException(status_code=500, detail=f"Database Connection Failed: {err}")

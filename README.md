@@ -111,7 +111,15 @@ For each product:
 - **Python 3.10+**
 - **MySQL Server** running locally
 - Database: `inventory_system`
-- Default credentials in scripts: `root` / *(see `main.py` for password)*
+- Environment variable management: `.env` support via `python-dotenv`
+
+---
+
+## Environment configuration
+
+1. Copy `.env.example` to `.env`
+2. Update `DB_PASSWORD` and any local overrides
+3. Keep `.env` out of version control; it is already ignored by `.gitignore`
 
 ---
 
@@ -124,7 +132,15 @@ cd Predictive_Inventory_System
 py -m pip install -r requirements.txt
 ```
 
-### 2. Generate data (if needed)
+### 2. Configure local environment
+
+```bash
+copy .env.example .env
+```
+
+Edit `.env` to set `DB_PASSWORD` and other values as needed.
+
+### 3. Generate data (if needed)
 
 ```bash
 py generate_data.py

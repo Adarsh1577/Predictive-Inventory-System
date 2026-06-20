@@ -2,24 +2,18 @@
 Database schema setup script.
 Creates the products, inventory, and stock_transactions tables needed by the system.
 """
-import mysql.connector
+from config import mysql_connect
 import pandas as pd
 
 def setup_database_schema():
-    print("🔧 Setting up database schema...")
+    print("Setting up database schema...")
     
-    # Connect to MySQL
-    conn = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Aps@JC-857079N",
-        database="inventory_system"
-    )
+    conn = mysql_connect()
     cursor = conn.cursor()
     
     try:
         # 1. Create products table
-        print("📋 Creating 'products' table...")
+        print("Creating 'products' table...")
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS products (
             product_id INT PRIMARY KEY,
@@ -29,7 +23,7 @@ def setup_database_schema():
         """)
         
         # 2. Create inventory table
-        print("📊 Creating 'inventory' table...")
+        print("Creating 'inventory' table...")
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS inventory (
             product_id INT PRIMARY KEY,
@@ -40,7 +34,7 @@ def setup_database_schema():
         """)
         
         # 3. Create stock_transactions table
-        print("📝 Creating 'stock_transactions' table...")
+        print("Creating 'stock_transactions' table...")
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS stock_transactions (
             id INT AUTO_INCREMENT PRIMARY KEY,
@@ -53,7 +47,7 @@ def setup_database_schema():
         """)
 
         # 4. Create procurement_alerts table for automated procurement tracking
-        print("🛎️ Creating 'procurement_alerts' table...")
+        print("Creating 'procurement_alerts' table...")
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS procurement_alerts (
             alert_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -72,12 +66,12 @@ def setup_database_schema():
         """)
         
         conn.commit()
-        print("✅ Schema tables created successfully!")
+        print("Schema tables created successfully!")
         
         # 4. Populate products table if empty
         cursor.execute("SELECT COUNT(*) FROM products;")
         if cursor.fetchone()[0] == 0:
-            print("📥 Populating 'products' table...")
+            print("Populating 'products' table...")
             products_data = [
                 (101, "Wireless Headphones", 10),
                 (102, "Mechanical Keyboard", 8),
@@ -88,12 +82,12 @@ def setup_database_schema():
                 products_data
             )
             conn.commit()
-            print("✅ Products table populated!")
+            print("Products table populated!")
         
         # 5. Populate stock_transactions from historical_sales if needed
         cursor.execute("SELECT COUNT(*) FROM stock_transactions;")
         if cursor.fetchone()[0] == 0:
-            print("📥 Populating 'stock_transactions' from historical_sales...")
+            print("Populating 'stock_transactions' from historical_sales...")
             df = pd.read_csv("historical_sales.csv")
             for _, row in df.iterrows():
                 cursor.execute("""
@@ -101,12 +95,12 @@ def setup_database_schema():
                 VALUES (%s, %s, %s, %s)
                 """, (row['Date'], row['Product_ID'], -row['Quantity_Sold'], 'SALES'))
             conn.commit()
-            print(f"✅ Loaded {len(df)} transactions into stock_transactions!")
+            print(f"Loaded {len(df)} transactions into stock_transactions!")
         
         # 6. Initialize inventory levels (set current_stock to a reasonable starting value)
         cursor.execute("SELECT COUNT(*) FROM inventory;")
         if cursor.fetchone()[0] == 0:
-            print("📥 Initializing 'inventory' table...")
+            print("Initializing 'inventory' table...")
             inventory_data = [
                 (101, 100, 10),
                 (102, 80, 8),
@@ -117,7 +111,7 @@ def setup_database_schema():
                 inventory_data
             )
             conn.commit()
-            print("✅ Inventory table initialized!")
+            print("Inventory table initialized!")
         
     except Exception as e:
         print(f"❌ Error during schema setup: {e}")
@@ -125,7 +119,7 @@ def setup_database_schema():
     finally:
         cursor.close()
         conn.close()
-        print("🔌 Database connection closed.")
+        print("Database connection closed.")
 
 if __name__ == "__main__":
     setup_database_schema()

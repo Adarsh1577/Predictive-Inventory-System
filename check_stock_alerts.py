@@ -5,15 +5,14 @@ Persists CRITICAL / WARNING / HEALTHY alerts to MySQL (aligned with main.py).
 import datetime
 import pickle
 
-import mysql.connector
 import numpy as np
+from config import MODEL_FILENAME, mysql_connect
 
 FORECAST_HORIZON = 7
-MODEL_FILENAME = "inventory_forecast_models.pkl"
 
 
 def load_forecast_models():
-    print("🧠 Loading trained time-series forecasting models...")
+    print("Loading trained time-series forecasting models...")
     with open(MODEL_FILENAME, "rb") as file:
         return pickle.load(file)
 
@@ -133,12 +132,7 @@ def upsert_procurement_alert(cursor, alert_data):
 
 
 def check_inventory_and_alert():
-    conn = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Aps@JC-857079N",
-        database="inventory_system",
-    )
+    conn = mysql_connect()
     cursor = conn.cursor(dictionary=True)
     models = load_forecast_models()
 
@@ -154,7 +148,7 @@ def check_inventory_and_alert():
     alert_generated = datetime.date.today()
 
     print(
-        f"\n🔮 7-day autoregressive look-ahead for {len(products_list)} products "
+        f"\n7-day autoregressive look-ahead for {len(products_list)} products "
         f"(horizon starts {horizon_start})\n"
     )
 
@@ -192,7 +186,7 @@ def check_inventory_and_alert():
         upsert_procurement_alert(cursor, alert_data)
         counts[status] += 1
 
-        icon = {"CRITICAL": "🚨", "WARNING": "⚠️", "HEALTHY": "✅"}[status]
+        icon = {"CRITICAL": "CRITICAL", "WARNING": "WARNING", "HEALTHY": "HEALTHY"}[status]
         print(
             f"{icon} {pname}: {status} | stock={current_stock} | "
             f"7-day demand={metrics['predicted_7_day_total']} | "
@@ -205,7 +199,7 @@ def check_inventory_and_alert():
     conn.close()
 
     print(
-        f"\n🔌 Evaluation complete — CRITICAL: {counts['CRITICAL']}, "
+        f"\nEvaluation complete — CRITICAL: {counts['CRITICAL']}, "
         f"WARNING: {counts['WARNING']}, HEALTHY: {counts['HEALTHY']}\n"
     )
 
